@@ -1,1 +1,4 @@
 *.pbxproj -text
+
+*.h linguist-language=React-Native
+*.m linguist-language=React-Native
