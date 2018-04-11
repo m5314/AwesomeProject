@@ -20,25 +20,25 @@ const Tabs = TabNavigator({
         screen: HomeTabpage,
         navigationOptions: {  // 也可以写在组件的static navigationOptions内
                 tabBarLabel: '首页',
-                tabBarIcon: ({tintColor}) => (<Image source={require('./image/home.jpg')} style={[{tintColor: tintColor},styles.icon]}/>),
+                tabBarIcon: ({tintColor}) => (<Image source={require('./image/icon_home.png')} style={[{tintColor: tintColor},styles.icon]}/>),
         }
     },
     Movie: {
         screen: MovieTabpage,
         navigationOptions: {
                 tabBarLabel: '电影',
-               tabBarIcon: ({tintColor}) => (<Image source={require('./image/movie.jpg')} style={[{tintColor: tintColor},styles.icon]}/>),
+               tabBarIcon: ({tintColor}) => (<Image source={require('./image/icon_home.png')} style={[{tintColor: tintColor},styles.icon]}/>),
         }
     },
     Me: {
         screen: MeTabpage,
         navigationOptions: {
                 tabBarLabel: '我',
-                tabBarIcon: ({tintColor}) => (<Image source={require('./image/me.jpg')} style={[{tintColor: tintColor},styles.icon]}/>),
+                tabBarIcon: ({tintColor}) => (<Image source={require('./image/icon_home.png')} style={[{tintColor: tintColor},styles.icon]}/>),
         }
     }
   }, {
-      animationEnabled: false, // 切换页面时是否有动画效果
+      animationEnabled: true, // 切换页面时是否有动画效果
       tabBarPosition: 'bottom', // 显示在底端，android 默认是显示在页面顶端的
       swipeEnabled: false, // 是否可以左右滑动切换tab
       backBehavior: 'none', // 按 back 键是否跳转到第一个Tab(首页)， none 为不跳转
